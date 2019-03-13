@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Fund Me!</title>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="style.css">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Fund Me!</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#about">About</a></li>
+          <li><a href="#Campaigns">Campaigns</a></li>
+          <li><a href="#howitWorks">How It Works</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#loginModule" class="modal-trigger">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="#about">About</a></li>
+      <li><a href="#Campaigns">Campaigns</a></li>
+      <li><a href="#howitWorks">How It Works</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="#loginModule">Login</a></li>
+    </ul>
+    <!-- modals/Login -->
+    <div class="modal" id="loginModule">
+      <div class=row>
+        <div class="col s12">
+          <ul class="tabs">
+              <li class="tab col s6"><a href="#login">Log In</a></li>
+              <li class="tab col s6"><a href="#register">Register</a></li>
+          </ul>
+        </div>
+        <div id="login" class="col s12 LoginForm">
+          <form action="/login" method="post" id="LoginForm">
+            <div class="input-field">
+                <input type="text" placeholder="Someone@something.com" id="email" required>
+                <label for="email">Email</label>
+              </div>
+              <div class="input-field">
+                  <input type="password" placeholder="*********" id="password" required>
+                  <label for="password">Password</label>
+                  <button class="btn waves-effect waves-light" type="submit" name="action">Login
+                  <i class="material-icons right">send</i>
+                  </button>
+                </div>
+          </form>
+        </div>
+        <div id="register" class="col s12 registerForm">
+            <form action="/register" method="post" id ="registrationForm">
+              <div class="input-field">
+                  <input type="text" placeholder="Peter" id="fname" required>
+                  <label for="fname">First Name</label>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Parker" id="lname">
+                    <label for="lname">Last Name</label>
+                  </div>
+              <div class="input-field">
+                  <input type="text" placeholder="Someone@something.com" id="regemail" required>
+                  <label for="email">Email</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" placeholder="*********" id="pass" required>
+                    <label for="password">Password</label>
+
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Register
+                    <i class="material-icons right">send</i>
+                    </button>
+                  </div>
+            </form>
+          </div>
+      </div>
+
+    </div>
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img class="responsive-img" src="https://i.ibb.co/9hHmDyT/People.jpg"> 
+          <div class="caption center-align">
+            <h3>For People!</h3>
+            <h5 class="light grey-text text-lighten-3">For People in Need to Support their Families</h5>
+          </div>
+        </li>
+        <li>
+          <img class="responsive-img" src="https://i.ibb.co/2qt6CBK/NGO.jpg">
+          <div class="caption center-align">
+            <h3>For Non Profit Organisations!</h3>
+            <h5 class="light grey-text text-lighten-3">Helps them to gather funds for various Activities</h5>
+          </div>
+        </li>
+        <li>
+          <img class="responsive-img" src="https://i.ibb.co/rkt1W0J/Labourers.jpg">
+          <div class="caption center-align">
+            <h3>For Farmers!</h3>
+            <h5 class="light grey-text text-lighten-3">So that, They can payback their loans</h5>
+          </div>
+        </li>
+        <li>
+          <img class="responsive-img" src="https://i.ibb.co/DDqPwpM/Patients.jpg">
+          <div class="caption center-align">
+            <h3>For Patients!</h3>
+            <h5 class="light grey-text text-lighten-3">For people suffering from life Threatning Diseases</h5>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <Section id="Campaigns" class="section scrollspy">
+      <div class="heading">
+        <h3> Current Running Campaigns</h3>
+        <hr class="style8">
+      </div>
+      <div class="content">
+        <div class="row">
+          <div class="col s12 m3 3">
+              <div class="card">
+                  <div class="card-image">
+                    <img class="responsive-img" src="https://i.ibb.co/9hHmDyT/People.jpg" >
+                    <span class="card-title">Card Title</span>
+                  </div>
+                  <div class="card-content">
+                    <p>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">This is a link</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col s12 m3 3">
+              <div class="card">
+                  <div class="card-image">
+                    <img class="responsive-img" src="https://i.ibb.co/9hHmDyT/People.jpg" >
+                    <span class="card-title">Card Title</span>
+                  </div>
+                  <div class="card-content">
+                    <p>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">This is a link</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col s12 m3 3">
+              <div class="card">
+                  <div class="card-image">
+                    <img class="responsive-img" src="https://i.ibb.co/9hHmDyT/People.jpg" >
+                    <span class="card-title">Card Title</span>
+                  </div>
+                  <div class="card-content">
+                    <p>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">This is a link</a>
+                  </div>
+                </div>
+          </div>
+          <div class="col s12 m3 3">
+              <div class="card">
+                  <div class="card-image">
+                    <img class="responsive-img" src="https://i.ibb.co/9hHmDyT/People.jpg">
+                    <span class="card-title">Card Title</span>
+                  </div>
+                  <div class="card-content">
+                    <p>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">This is a link</a>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </Section>
+    <section id="about" class="section scrollspy">
+        <div class="heading">
+            <h3> About Us</h3>
+            <hr class="style8">
+          </div>
+          <div class="content">
+           <div class="row">
+             <div class="col s2"></div>
+             <div class="col s8">
+               <article>
+                 <h4>
+                   Dedicated for Bringing Change in Society
+                 </h4>
+                 <p></p>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vitae quibusdam quidem est saepe aut? Facilis obcaecati beatae ut maiores, mollitia omnis facere officia, odit sunt possimus quae assumenda eaque?</p>
+
+               </article>
+             </div>
+             <div class="col s2"></div>
+           </div>
+          </div>
+    </section>
+    <div class="parallax-container">
+        <div class="parallax"><img class="responsive-img" src="https://i.ibb.co/d5DntjG/rawpixel-788597-unsplash-min.jpg" alt="rawpixel-788597-unsplash-min">
+        </div>
+      </div>
+    <section id="howitWorks" class="section scrollspy">
+        <div class="heading">
+            <h3> How It Works</h3>
+            <hr class="style8">
+          </div>
+          <div class="content">
+        
+          </div>
+    </section>
+    <div class="parallax-container">
+        <div class="parallax"><img class="responsive-img" src="https://i.ibb.co/VtTWXDZ/piron-guillaume-367208-unsplash-min.jpg" alt="piron-guillaume-367208-unsplash-min"></div>
+      </div>  
+  <section id="contact" class="scrollspy">
+        <div class="heading">
+            <h3> Ask Us</h3>
+            <hr class="style8">
+            <p></p>
+            <p></p>
+            <h5>Lets Get Talking</h5>
+
+          </div>
+          <div class="content">
+             <div class="row">
+               <div class="col s3"></div>
+               <div class="col s6">
+                 <Form method="POST" action="/contact" id="contactForm">
+                   <div class="input-field">
+                     <input type="text" placeholder="Enter your Name" id="Cname" required>
+                     <label for="Cname">Name</label>
+                   </div>
+                   <div class="input-field">
+                      <input type="text" placeholder="Enter your Email" id="Cemail" required>
+                      <label for="Cemail">Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Type your Query!" id="contactMsg" required>
+                        <label for="contactMsg">Message</label>
+                      </div>
+                      <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                          <i class="material-icons right">send</i>
+                        </button>
+                 </Form>
+               </div>
+               <div class="col s3"></div>
+             </div>             
+          </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Fund Me!</h5>
+          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2019 FundMe! 
+        <a class="grey-text text-lighten-4 right" href="#!">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+  <!--JavaScript at end of body for optimized loading-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="materialize.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
